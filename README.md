@@ -1,4 +1,4 @@
-# Taskmemo - A simple cli todo application
+# Taskmemo - A simple todo cli application
 
 ##### Commands
 Just type the item and press enter to add it.  
