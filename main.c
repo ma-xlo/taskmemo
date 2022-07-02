@@ -76,12 +76,10 @@ void commandLine(char **array, int line) {
     gets(input);
     size = strlen(input);
     
-    //Todo -> Fix: "m" is also beeing accepted!
     if(strcmp(input, "clear") == 0 ) {
         clear(array, line);
-    // } else if (strcmp(input, "del") == 0) {
-    //     printf("Whitch line?\n\n");
-    //     //delete(array, line);
+    } else if (strcmp(input, "quit") == 0) {
+        exit(EXIT_SUCCESS);
     } else {
         //remove new line character
         input[strcspn(input, "\n")] = 0;
@@ -124,4 +122,6 @@ int main () {
         commandLine(array, line);
         line++;
     }
+
+    return EXIT_SUCCESS;
 }
